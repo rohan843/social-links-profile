@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 :root {
     --black: #141414;
     --dark-grey: #1F1F1F;
     --grey: #333333;
     --white: #ffffff;
     --neon-green: #C4F82A;
+    --darker-neon-green: #88a924;
 }
 
 html {
@@ -24,21 +27,87 @@ body {
     max-width: 385px;
     border-radius: 12px;
     padding: 40px;
+    padding-bottom: 0px;
+}
+
+.image {
+    height: 88px;
+    width: 88px;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
 }
 
 .name {
     color: var(--white);
+    text-align: center;
 }
 
 .location {
     color: var(--neon-green);
+    text-align: center;
 }
 
 .quote {
     color: var(--white);
+    text-align: center;
+}
+
+.link-list {
+    width: 100%;
 }
 
 .link {
+    width: 100%;
     color: var(--white);
     background-color: var(--grey);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+.link:last-child {
+    margin-bottom: 0;
+}
+
+.text {
+    font-family: "Inter", sans-serif;
+}
+
+.text-heading {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.text-bold {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.text-regular {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.attribution {
+    color: var(--white);
+    font-size: 10px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.attribution a:active {
+    color: var(--white);
+}
+
+.attribution a:visited {
+    color: var(--darker-neon-green);
+}
+
+.attribution a:link {
+    color: var(--neon-green);
 }
