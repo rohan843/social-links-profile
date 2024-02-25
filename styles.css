@@ -1,0 +1,44 @@
+:root {
+    --black: #141414;
+    --dark-grey: #1F1F1F;
+    --grey: #333333;
+    --white: #ffffff;
+    --neon-green: #C4F82A;
+}
+
+html {
+    background-color: var(--black);
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--dark-grey);
+    max-width: 385px;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.name {
+    color: var(--white);
+}
+
+.location {
+    color: var(--neon-green);
+}
+
+.quote {
+    color: var(--white);
+}
+
+.link {
+    color: var(--white);
+    background-color: var(--grey);
+}
