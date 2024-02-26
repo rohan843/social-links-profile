@@ -42,15 +42,13 @@ Users should be able to:
 
 ### What I learned
 
-To center a div vertically on the page, but to allow for a scroll in case the div's height exceeds the viewport's, we can wrap it with an _outer_ div as done below. Then, the outer div may allow for scrolling by setting a `min-height` of `100%` on it, and a height value of `max-content`. Being a block element, the outer div will take the full width. Then, the inner content div can be centered via flexbox. The inner div may also be given a margin to allow for some offset on small screens from viewport's edges.
+To center a div vertically on the page, but to allow for a scroll in case the div's height exceeds the viewport's, we can give its parent container (here, `body`) a `min-height` of 100%. This ensures that the `body` will be _atleast_ as tall as the screen, but will increase in height if the inner content requires more height, thus preventing overflows. Then, the `html` tag will allow for an overflow scrollbar.
 
 ```html
 <html>
   <body>
-    <div class="outer">
-      <div class="container">
-        <!-- Other html here -->
-      </div>
+    <div class="container">
+      <!-- Other html here -->
     </div>
   </body>
 </html>
@@ -62,12 +60,7 @@ html {
 }
 
 body {
-  height: 100%;
   margin: 0;
-}
-
-.outer {
-  height: max-content;
   min-height: 100%;
   display: flex;
   align-items: center;
