@@ -12,11 +12,18 @@
 html {
     background-color: var(--black);
     height: 100%;
+    overflow: auto;
 }
 
 body {
     height: 100%;
+    width: 100%;
     margin: 0;
+}
+
+.outer {
+    height: max-content;
+    min-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,10 +31,13 @@ body {
 
 .container {
     background-color: var(--dark-grey);
-    max-width: 385px;
+    height: max-content;
+    width: calc(90% - 80px);
+    max-width: 305px;
     border-radius: 12px;
     padding: 40px;
     padding-bottom: 0px;
+    margin: 24px;
 }
 
 .image {
@@ -35,22 +45,25 @@ body {
     width: 88px;
     border-radius: 100%;
     display: block;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .name {
     color: var(--white);
     text-align: center;
+    margin: 24px 0 10px 0;
 }
 
 .location {
     color: var(--neon-green);
     text-align: center;
+    margin: 0 0 24px 0;
 }
 
 .quote {
     color: var(--white);
     text-align: center;
+    margin: 0 0 24px 0;
 }
 
 .link-list {
