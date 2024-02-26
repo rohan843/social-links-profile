@@ -6,7 +6,7 @@
     --grey: #333333;
     --white: #ffffff;
     --neon-green: #C4F82A;
-    --darker-neon-green: #88a924;
+    --darker-neon-green: #aad42c;
 }
 
 html {
@@ -58,13 +58,31 @@ body {
 }
 
 .link {
-    width: 100%;
+    display: block;
     color: var(--white);
     background-color: var(--grey);
     border: none;
     border-radius: 8px;
     padding: 12px;
     margin-bottom: 16px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (pointer: fine) {
+    .link:hover {
+        background-color: var(--neon-green);
+        color: var(--grey);
+    }
+}
+
+@media (pointer: coarse) {
+    .link:active {
+        background-color: var(--neon-green);
+        color: var(--grey);
+    }
 }
 
 .link:last-child {
@@ -100,14 +118,14 @@ body {
     padding: 20px 0;
 }
 
-.attribution a:active {
-    color: var(--white);
+.attribution a:link {
+    color: var(--neon-green);
 }
 
 .attribution a:visited {
     color: var(--darker-neon-green);
 }
 
-.attribution a:link {
-    color: var(--neon-green);
+.attribution a:active {
+    text-decoration: line-through;
 }
