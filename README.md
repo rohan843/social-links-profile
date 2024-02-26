@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/social-links-profile-plain-html-css-i_nXZKr5YM)
 - Live Site URL: [Social Links Profile](https://rohan843-social-links-profile.netlify.app/)
 
 ## My process
